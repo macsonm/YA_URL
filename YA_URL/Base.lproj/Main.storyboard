@@ -17,20 +17,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hYB-2s-wqP">
-                                <rect key="frame" x="36" y="86" width="342" height="739"/>
+                                <rect key="frame" x="36" y="476" width="342" height="349"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLx-3C-QgX">
+                                <rect key="frame" x="95" y="122" width="225" height="80"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="rLx-3C-QgX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="4tz-Gh-3Jw"/>
+                            <constraint firstItem="hYB-2s-wqP" firstAttribute="top" secondItem="rLx-3C-QgX" secondAttribute="bottom" constant="274" id="5Dt-td-ZFV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rLx-3C-QgX" secondAttribute="trailing" constant="94" id="7dX-jn-p5j"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hYB-2s-wqP" secondAttribute="bottom" constant="37" id="Kqk-RM-U6U"/>
+                            <constraint firstItem="rLx-3C-QgX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="78" id="MrB-FH-I0z"/>
                             <constraint firstItem="hYB-2s-wqP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="36" id="PWD-Aw-XYi"/>
-                            <constraint firstItem="hYB-2s-wqP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="Vd0-Ny-Ebg"/>
+                            <constraint firstItem="hYB-2s-wqP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="432" id="Vd0-Ny-Ebg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hYB-2s-wqP" secondAttribute="trailing" constant="36" id="jnc-E8-PBa"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="hYB-2s-wqP" id="D7c-nE-6LS"/>
+                        <outlet property="label" destination="rLx-3C-QgX" id="sPO-z6-yuF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
